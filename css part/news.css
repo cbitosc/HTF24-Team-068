@@ -1,0 +1,299 @@
+@font-face {
+    font-family: "Syncopate-Bold";
+    src: url("font/Syncopate/Syncopate-Bold.ttf");
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-bg-color: #0d0d0d;
+    --accent-color: #8DA4EA;
+}
+
+body {
+    background: var(--main-bg-color);
+    color: white;
+    overflow-x: hidden;
+    text-align: center;
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Header Styling */
+header {
+    background: black;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+    font-family: "Syncopate-Bold";
+    font-size: 24px;  /* Increased size for consistency */
+    font-weight: 800;
+    color: var(--accent-color);  /* Color matching the theme */
+}
+
+/* Navigation Menu */
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav ul li {
+    margin-left: 30px; /* Adjusted spacing for consistency */
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 16px;  /* Standardized font size */
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 5px 10px;  /* Added padding for consistency */
+}
+
+.nav ul li:hover, 
+.nav ul li a:hover {
+    color: var(--accent-color);
+    background: linear-gradient(to bottom, var(--accent-color), #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid var(--accent-color);
+    padding: 10px 25px;
+    border-top-left-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    color: #0d0d0d;
+}
+
+/* Main Content Styling */
+.content h1 {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 50px;
+    color: #fff;
+    line-height: 70px;
+    margin-top: 3%;
+}
+
+.content h1 span {
+    background: linear-gradient(to bottom, var(--accent-color), #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content p {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 24px;
+    padding: 30px 0px 40px;
+}
+
+/* Centered Button Wrapper */
+.center-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button with Icon */
+.content button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.content .btn span {
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+}
+
+/* Earth Image and Decorations */
+.earth-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+    position: relative;
+}
+
+.earth-img::before {
+    content: '';
+    position: absolute;
+    background-image: url("img/globe.png");
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 210px;
+    width: 145px;
+    height: 145px;
+}
+
+.earth-img::after {
+    content: '';
+    position: absolute;
+    background-image: url("img/space-research.png");
+    background-repeat: no-repeat;
+    right: 120px;
+    top: -204px;
+    width: 35%;
+    height: 147%;
+}
+
+/* News Section Styling */
+.news-section {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+.container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Filter Buttons Styling */
+.filter-buttons {
+    margin-bottom: 30px;
+}
+
+.filter-buttons .btn {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons .btn:hover {
+    background-color: #4facfe;
+}
+
+/* News Items Styling */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.news-item:hover {
+    background-color: #333;
+}
+
+.news-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.news-item p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #fff;
+    font-family: "Syncopate-Bold";
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 50px;
+    }
+    
+    .content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .nav ul li {
+        margin-left: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+
+    .earth-img::before {
+        left: 100px;
+    }
+
+    .earth-img::after {
+        right: 60px;
+    }
+}
