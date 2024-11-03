@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latest Space News - COSMOLINK</title>
+  <link rel="stylesheet" href="news.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h2>COSMOLINK</h2>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="signin.html">sign_in</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="library.html">Books</a></li>
+        <li><a href="calendar.html">Space Calendar</a></li>
+        <li><a href="forum.html">Discussion Forum</a></li>
+        <li><a href="queries.html">Queries</a></li>
+        <li class="btn"><a href="contact.html">Get in Touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="news-section">
+    <div class="container">
+      <h1>🚀 Latest Space News</h1>
+      <p>Stay updated with the latest discoveries and advancements in the realm of space exploration.</p>
+      
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="btn" onclick="filterNews('all')">All</button>
+        <button class="btn" onclick="filterNews('galaxies')">Galaxies</button>
+        <button class="btn" onclick="filterNews('technology')">Technology</button>
+        <button class="btn" onclick="filterNews('exploration')">Exploration</button>
+      </div>
+
+      <!-- News Container -->
+      <div class="news-container">
+        <div class="news-item" data-category="galaxies">
+          <h2>The Mysteries of Andromeda</h2>
+          <p>Explore the wonders of the Andromeda Galaxy, the closest spiral galaxy to the Milky Way. Scientists believe it will collide with our galaxy in about 4.5 billion years!</p>
+        </div>
+        <div class="news-item" data-category="technology">
+          <h2>New SpaceX Innovations</h2>
+          <p>SpaceX introduces cutting-edge technologies that could drastically reduce the cost of interplanetary travel, aiming to make Mars exploration a reality by 2030.</p>
+        </div>
+        <div class="news-item" data-category="exploration">
+          <h2>Mission to Mars</h2>
+          <p>NASA's latest rover, Perseverance, has been collecting samples that could hold signs of ancient microbial life on Mars. The first human mission to Mars is set for the 2030s.</p>
+        </div>
+        <div class="news-item" data-category="galaxies">
+          <h2>Black Holes and Quasars</h2>
+          <p>Did you know that quasars are powered by black holes? These luminous objects are some of the most energetic and distant parts of our universe.</p>
+        </div>
+        <div class="news-item" data-category="technology">
+          <h2>Satellite Networks</h2>
+          <p>Satellites are revolutionizing global communication. Starlink's network of satellites is providing internet access to the remotest areas of the Earth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made by Space Enthusiasts 🌌 | 2024</p>
+  </footer>
+</body>
+</html>

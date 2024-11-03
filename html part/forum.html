@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discussion Forum - COSMOLINK</title>
+  <link rel="stylesheet" href="forum.css">
+  <script defer src="script.js"></script>
+  <script defer src="forum.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h2>COSMOLINK</h2>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="signin.html">sign_in</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="library.html">Books</a></li>
+        <li><a href="calendar.html">Space Calendar</a></li>
+        <li><a href="forum.html">Discussion Forum</a></li>
+        <li><a href="queries.html">Queries</a></li>
+        <li class="btn"><a href="contact.html">Get in Touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="forum" class="forum-section">
+    <div class="forum-container">
+      <h2>Discussion Forum</h2>
+      <button class="btn" onclick="createThread()">Create Thread</button>
+      <input type="text" id="searchBar" onkeyup="searchThreads()" placeholder="Search Threads...">
+      <div id="thread-list">
+        <!-- Threads will be dynamically created here -->
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
